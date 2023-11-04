@@ -1,0 +1,10 @@
+//B. Perform sorting of an array in descending order.
+function sortDescending(arr) {
+    return arr.sort((a, b) => b - a);
+}
+
+let input = prompt("Enter numbers separated by commas (e.g., 5, 3, 8, 1, 2, 9, 4):");
+let numbers = input.split(',').map(Number);
+let sortedDescending = sortDescending(numbers);
+
+console.log( sortedDescending);
